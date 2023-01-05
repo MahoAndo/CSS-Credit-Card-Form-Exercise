@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="container">
+            <!-- front -->
+            <div class="card-front">
+                <div id="shadow"></div>
+                <div class="holder-container">
+                    <label for="card-holder"></label>
+                    <input type="text" id="card-holder" placeholder="Holder of Card" required>
+                </div>
+        
+                <div class="number-container">
+                    <label for="card-number"></label>
+                    <input type="text" id="card-number" placeholder="Number of Card"  maxlength="16" required>
+                </div>
+
+                <div class="exp-icon-container">
+                    <div class="exp-container">
+                        <label for="card-exp">VALID THRU</label>
+                        <div class="exp-grid">
+                            <input type="text" id="card-month" placeholder="MM" maxlength="2" required>
+                            <p>/</p>
+                            <input type="text" id="card-year" placeholder="YY" maxlength="2" required>
+                        </div>
+                    </div>
+    
+                    <div class="card-row">
+                        <span class="visa">
+                            <img src="img/visa.png" alt="visa">
+                        </span>
+                        <span class="mastercard">
+                            <img src="img/mastercard.png" alt="visa">
+                        </span>
+                    </div>
+                </div>
+        
+                <div class="cvc-container">
+                    <label for="card-cvc">CVC</label>
+                    <input type="text" id="card-cvc" placeholder="CVC" maxlength="3" required>
+                </div>
+            </div>
+
+            <!-- back -->
+            <div class="card-back">
+                <div class="card-stripe"></div>
+            </div>
+
+            <button type="button" class="card-send">Send</button>
+            
+        </div>
+    </form>
+</body>
+</html>
